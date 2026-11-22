@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rangkuman Materi Ibadah</title>
+<style>
+:root{--bg:#f7f5ef;--card:#fff;--tx:#1d2b24;--mu:#5d6b64;--ac:#0f6e56;--soft:#e1f3ec;--bd:#dcd8cc;--hl:#fff3d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a16;--card:#1b2620;--tx:#e8efe9;--mu:#9baba3;--ac:#4fc9a4;--soft:#1f3a30;--bd:#2d3b34;--hl:#3a3216;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a16;--card:#1b2620;--tx:#e8efe9;--mu:#9baba3;--ac:#4fc9a4;--soft:#1f3a30;--bd:#2d3b34;--hl:#3a3216;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Georgia,"Times New Roman",serif}
+.w{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.7rem;margin:.2em 0 .1em}
+.sub{color:var(--mu);margin:0 0 16px;font-family:system-ui,sans-serif;font-size:.95rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:var(--soft);padding:12px;border-radius:12px;font-family:system-ui,sans-serif;font-size:.85rem;margin-bottom:14px}
+.chain b{background:var(--ac);color:#fff;border-radius:99px;padding:2px 10px}
+.chain i{color:var(--mu);font-style:normal}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;font-family:system-ui,sans-serif}
+button{font:inherit;font-size:.9rem;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:99px;cursor:pointer}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.h{display:flex;gap:12px;align-items:center;padding:14px;cursor:pointer;font-family:system-ui,sans-serif}
+.n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;font-weight:700}
+.t{font-weight:700;line-height:1.3}
+.k{font-size:.8rem;color:var(--ac);font-weight:600}
+.b{display:none;padding:0 14px 14px}
+.c.open .b{display:block}
+.row{margin:10px 0 0}
+.lb{font:700 .72rem system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--mu)}
+.v{border-left:3px solid var(--ac);padding:6px 10px;margin:8px 0;background:var(--soft);border-radius:0 8px 8px 0}
+.v .r{font:700 .85rem system-ui,sans-serif;color:var(--ac)}
+.v p{margin:2px 0}
+.m{font-size:.92rem;color:var(--mu)}
+.imp{background:var(--hl);border-radius:8px;padding:8px 12px;margin-top:8px;font-size:.95rem}
+.imp ul{margin:4px 0 0;padding-left:18px}
+.hide .c:not(.rev) .sec{filter:blur(7px);user-select:none}
+.hide .c:not(.rev) .sec::after{content:"";}
+.hint{display:none;font:.8rem system-ui,sans-serif;color:var(--mu);margin-top:8px}
+.hide .c:not(.rev) .hint{display:block}
+.ar{font:1.5rem/2.3 "Amiri","Traditional Arabic","Noto Naskh Arabic",serif;direction:rtl;text-align:right;margin:4px 0 6px}
+.tf{margin-top:6px;font-family:system-ui,sans-serif;font-size:.88rem}
+.tf summary{cursor:pointer;color:var(--ac);font-weight:600}
+.tf p{margin:4px 0}
+.src{font-size:.78rem;color:var(--mu)}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:22px 0;font-family:system-ui,sans-serif}
+.q h2{margin:0 0 8px;font-size:1.15rem}
+.o{display:block;width:100%;text-align:left;margin:6px 0;border-radius:10px}
+.o.ok{background:#1d9e75;color:#fff;border-color:#1d9e75}
+.o.no{background:#c0392b;color:#fff;border-color:#c0392b}
+.ex{margin-top:10px;padding:8px 12px;background:var(--soft);border-radius:8px;font-size:.9rem}
+.refs{font:.85rem system-ui,sans-serif;color:var(--mu)}
+.refs a{color:var(--ac)}
+.nav{display:flex;gap:6px;overflow-x:auto;margin:0 0 14px;font-family:system-ui,sans-serif}
+.nav a{flex:none;padding:8px 14px;border:1px solid var(--bd);border-radius:99px;color:var(--tx);text-decoration:none;font-size:.9rem;background:var(--card)}
+.nav a.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+#p-materi .ar,#p-materi .tf{display:none}
+.th{font:700 1.05rem system-ui,sans-serif;margin:22px 0 6px;color:var(--ac)}
+.av{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin:10px 0}
+.av .r{font:700 .85rem system-ui,sans-serif;color:var(--ac)}
+.av .ar{font-size:var(--fs,1.9rem);line-height:2.4;margin:6px 0}
+.av label{font:.85rem system-ui,sans-serif;color:var(--mu);display:flex;gap:6px;align-items:center}
+.mem .ar{filter:blur(9px);cursor:pointer}
+.mem .ar.rv{filter:none}
+.tb{margin:10px 0 14px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-family:system-ui,sans-serif}
+.pr{font:.85rem system-ui,sans-serif;color:var(--mu)}
+.rm{text-align:center;color:var(--mu);font:.85rem system-ui,sans-serif;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>Rangkuman Materi Ibadah</h1>
+<p class="sub">9 tema · teks Arab · makna · tafsir · implementasi · kuis. Ketuk kartu untuk membuka.</p>
+<nav class="nav"><a href="#materi">Materi</a><a href="#ayat">Ayat</a><a href="#tafsir">Tafsir</a><a href="#kuis">Kuis</a></nav>
+<section id="p-materi" class="pg"><div class="chain" id="chain"></div>
+<div class="bar">
+<button id="all">Buka semua</button>
+<button id="hf">Mode hafalan</button>
+</div>
+<div id="list"></div>
+</section>
+<section id="p-ayat" class="pg" hidden><div id="ayat"></div></section>
+<section id="p-tafsir" class="pg" hidden><div id="tafsir"></div></section>
+<section id="p-kuis" class="pg" hidden><div class="q"><h2>Kuis Latihan</h2><div id="quiz"></div></div></section>
+<div class="refs"><b>Rujukan tafsir</b><ul><li>Tafsir Ibnu Katsir (Quran.com): <a href="https://quran.com" target="_blank" rel="noopener">quran.com</a></li><li>Al-Qur’an dan Tafsirnya, Kemenag RI: <a href="https://quran.kemenag.go.id" target="_blank" rel="noopener">quran.kemenag.go.id</a></li></ul></div>
+<p class="rm">Mode hafalan: sebutkan dulu isi ayatnya dari ingatan, lalu ketuk kartu untuk mengecek.<br>Teks Arab, terjemah, dan tafsir di sini adalah ringkasan untuk belajar. Cocokkan dengan mushaf, terjemah Kemenag, dan kitab tafsir aslinya sebelum dikutip.</p>
+</div>
+<script>
+const D=[
+{t:"Kenapa Kita Beribadah?",s:"Tujuan & alasan utama (tauhid & harap ridha)",g:"Memahami ibadah sebagai penghambaan total, bukan sekadar rutinitas.",k:"TUJUAN",
+a:[["Adz-Dzariyat [51]: 56","Allah menciptakan jin dan manusia semata agar beribadah kepada-Nya.","Ibadah adalah alasan keberadaan kita, bukan tambahan di sela kesibukan."],
+["Al-Baqarah [2]: 165","Sebagian orang menyamakan cinta kepada tandingan-tandingan dengan cinta kepada Allah; orang beriman paling kuat cintanya kepada Allah.","Ibadah lahir dari cinta tertinggi. Apa pun yang mengalahkan cinta kepada Allah adalah ‘tandingan’ yang halus: gawai, jabatan, popularitas."],
+["An-Nisa [4]: 125","Tak ada agama yang lebih baik daripada berserah diri kepada Allah, berbuat baik, dan mengikuti millah Ibrahim yang lurus.","Tiga syarat: berserah (tauhid), ihsan (kualitas), ittiba’ (mengikuti teladan)."]],
+i:["Niatkan aktivitas harian (belajar, bekerja) sebagai ibadah.","Tanya diri sebelum bertindak: ‘Ini untuk siapa?’"]},
+{t:"Ibadah Biar Nggak ‘Zonk’",s:"Ibadah harus benar secara agama & ikhlas",g:"Mengetahui syarat ibadah diterima: ikhlas dan sesuai tuntunan Rasul.",k:"IKHLAS + SESUAI SUNNAH",
+a:[["Al-Bayyinah [98]: 5","Mereka hanya diperintah menyembah Allah dengan memurnikan ketaatan, mendirikan shalat, dan menunaikan zakat; itulah agama yang lurus.","Ikhlas (hanif) adalah ruh; shalat dan zakat adalah bentuk nyatanya."],
+["Al-Kahfi [18]: 110","Siapa yang berharap bertemu Tuhannya, hendaklah beramal saleh dan tidak menyekutukan-Nya dalam ibadah.","‘Amal saleh’ = sesuai tuntunan; ‘tidak syirik’ = ikhlas. Dua rukun diterimanya amal dalam satu ayat."],
+["Az-Zumar [39]: 2–3","Sembahlah Allah dengan memurnikan ketaatan; agama yang bersih hanya milik-Nya.","Pamer (riya’) dan ibadah demi pujian mengotori kemurnian itu."]],
+i:["Cek dua pertanyaan: ‘Ikhlas tidak?’ dan ‘Ada dalilnya tidak?’","Hindari memotret/menyiarkan ibadah demi pujian."]},
+{t:"Totalitas di Semua Aspek",s:"Ibadah meliputi seluruh hidup",g:"Paham ibadah bukan cuma ritual, tapi juga belajar & aktivitas sosial.",k:"KAFFAH",
+a:[["Al-Baqarah [2]: 208","Masuklah ke dalam Islam secara keseluruhan dan jangan ikuti langkah-langkah setan.","Tidak memilih-milih: shalat taat tapi muamalah curang berarti belum kaffah."],
+["Ali Imran [3]: 191","Ulul albab mengingat Allah saat berdiri, duduk, berbaring, dan merenungkan penciptaan langit dan bumi.","Zikir dan berpikir (ilmu) berjalan bersama; belajar sains pun bisa jadi ibadah."]],
+i:["Jadikan belajar, kerja, dan membantu orang sebagai ibadah.","Biasakan zikir singkat di segala keadaan."]},
+{t:"Agar Ibadah Tidak Setengah-Setengah",s:"Konsisten & sungguh-sungguh",g:"Pentingnya kesungguhan & tidak setengah hati dalam ibadah.",k:"ISTIQAMAH + KHUSYUK",
+a:[["Al-Baqarah [2]: 208","Masuk Islam secara menyeluruh.","Totalitas berarti tidak setengah hati."],
+["Al-Mu’minun [23]: 1–2","Beruntunglah orang beriman, yaitu yang khusyuk dalam shalatnya.","Keberuntungan diawali dari kualitas shalat, bukan sekadar menggugurkan kewajiban."],
+["Al-An’am [6]: 162–163","Shalatku, ibadahku, hidupku, dan matiku untuk Allah, Tuhan semesta alam, tiada sekutu bagi-Nya.","Deklarasi pengabdian total, dari ritual sampai nasib akhir."]],
+i:["Shalat tepat waktu, tanpa buka ponsel saat shalat.","Pilih amal kecil yang rutin daripada besar tapi sesekali."]},
+{t:"Upgrade Ibadah ke Level Maksimal",s:"Kesempurnaan lahir & batin",g:"Memperbaiki kualitas ibadah lahir & batin.",k:"IHSAN",
+a:[["Ali Imran [3]: 191","Berzikir dan bertafakur dalam segala keadaan.","Batin hidup lewat zikir dan tafakur."],
+["Al-A’la [87]: 14–15","Beruntung orang yang menyucikan diri, menyebut nama Tuhannya, lalu shalat.","Urutannya: bersihkan hati → ingat Allah → shalat. Kualitas ibadah dimulai dari persiapan batin."],
+["Al-Baqarah [2]: 45–46","Mohonlah pertolongan dengan sabar dan shalat; shalat itu berat kecuali bagi orang khusyuk, yang yakin akan bertemu Tuhannya.","Keyakinan akan perjumpaan dengan Allah membuat ibadah terasa ringan."]],
+i:["Wudu tenang, hadirkan hati sebelum takbir.","Saat berat, kuatkan dengan sabar dan shalat."]},
+{t:"Ciri Ibadah yang ‘Kena’ di Hati",s:"Tanda ibadah diterima",g:"Ibadah membentuk akhlak & kepribadian lebih baik.",k:"TAKWA & AKHLAK",
+a:[["Al-Ankabut [29]: 45","Shalat mencegah perbuatan keji dan mungkar; mengingat Allah itu lebih besar (keutamaannya).","Tolok ukur: apakah shalat mengurangi maksiat dan memperbaiki perilaku?"],
+["Al-Baqarah [2]: 21","Wahai manusia, sembahlah Tuhanmu agar kamu bertakwa.","Buah ibadah adalah takwa."],
+["Al-Baqarah [2]: 183","Puasa diwajibkan agar kamu bertakwa.","Puasa melatih kendali diri, bukan sekadar menahan lapar."]],
+i:["Evaluasi diri tiap pekan: apa perilaku yang membaik?","Jaga lisan & kejujuran sebagai ‘bukti’ ibadah."]},
+{t:"Seimbang Itu Keren",s:"Keseimbangan ibadah & aktivitas lain",g:"Menyeimbangkan ibadah dengan belajar, sosial, dan hobi.",k:"TAWAZUN",
+a:[["Al-Qashash [28]: 77","Carilah akhirat dengan karunia Allah, jangan lupakan bagianmu di dunia, berbuat baiklah, dan jangan merusak.","Akhirat tujuan, dunia sarana. Hobi dan istirahat boleh asal tidak melalaikan."],
+["Al-Baqarah [2]: 143","Umat Islam dijadikan umat pertengahan (wasath) agar menjadi saksi atas manusia.","Moderat: tidak ekstrem berlebihan, tidak lalai."]],
+i:["Buat jadwal harian: ibadah, belajar, sosial, istirahat.","Niatkan olahraga/hobi untuk menjaga tubuh sebagai amanah."]},
+{t:"Hidup Bernilai",s:"Misi hidup: membawa manfaat",g:"Menyadari misi utama: bermanfaat & mendekatkan orang pada kebaikan.",k:"MANFAAT",
+a:[["Ali Imran [3]: 110","Kalian umat terbaik karena menyuruh yang makruf, mencegah yang mungkar, dan beriman kepada Allah.","Predikat ‘terbaik’ bersyarat: aktif memberi dampak, bukan sekadar mengaku."],
+["Fussilat [41]: 33","Tak ada ucapan yang lebih baik daripada menyeru kepada Allah, beramal saleh, dan berkata ‘Aku termasuk orang muslim’.","Dakwah paling kuat berpadu dengan teladan amal."]],
+i:["Ajak teman ke kebaikan dengan cara santun.","Targetkan satu kebaikan nyata tiap hari."]},
+{t:"Ibadah Bukan Cuma Buat Diri Sendiri",s:"Kontribusi sosial & peradaban",g:"Peran ibadah dalam membangun masyarakat & peradaban Islam.",k:"PERADABAN",
+a:[["Al-Hajj [22]: 41","Jika Allah teguhkan mereka di bumi, mereka mendirikan shalat, menunaikan zakat, menyuruh yang makruf, dan mencegah yang mungkar.","Ibadah pribadi (shalat) dan sosial (zakat, amar makruf) berpadu membangun masyarakat."],
+["As-Saff [61]: 4","Allah mencintai orang yang berjuang di jalan-Nya dalam barisan rapi, seakan bangunan yang kokoh.","Kekuatan umat datang dari kekompakan dan keteraturan."]],
+i:["Aktif di organisasi/kegiatan sosial & kerja kelompok.","Zakat/sedekah rutin, walau kecil."]}
+];
+const AR={
+"Adz-Dzariyat [51]: 56":"وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ",
+"Al-Baqarah [2]: 165":"وَالَّذِينَ آمَنُوا أَشَدُّ حُبًّا لِّلَّهِ ۗ … وَمِنَ النَّاسِ مَن يَتَّخِذُ مِن دُونِ اللَّهِ أَندَادًا يُحِبُّونَهُمْ كَحُبِّ اللَّهِ",
+"An-Nisa [4]: 125":"وَمَنْ أَحْسَنُ دِينًا مِّمَّنْ أَسْلَمَ وَجْهَهُ لِلَّهِ وَهُوَ مُحْسِنٌ وَاتَّبَعَ مِلَّةَ إِبْرَاهِيمَ حَنِيفًا",
+"Al-Bayyinah [98]: 5":"وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ ۚ وَذَٰلِكَ دِينُ الْقَيِّمَةِ",
+"Al-Kahfi [18]: 110":"فَمَن كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا",
+"Az-Zumar [39]: 2–3":"فَاعْبُدِ اللَّهَ مُخْلِصًا لَّهُ الدِّينَ ۝ أَلَا لِلَّهِ الدِّينُ الْخَالِصُ",
+"Al-Baqarah [2]: 208":"يَا أَيُّهَا الَّذِينَ آمَنُوا ادْخُلُوا فِي السِّلْمِ كَافَّةً وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ۚ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ",
+"Ali Imran [3]: 191":"الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ",
+"Al-Mu’minun [23]: 1–2":"قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۝ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ",
+"Al-An’am [6]: 162–163":"قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ ۝ لَا شَرِيكَ لَهُ ۖ وَبِذَٰلِكَ أُمِرْتُ وَأَنَا أَوَّلُ الْمُسْلِمِينَ",
+"Al-A’la [87]: 14–15":"قَدْ أَفْلَحَ مَن تَزَكَّىٰ ۝ وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّىٰ",
+"Al-Baqarah [2]: 45–46":"وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى الْخَاشِعِينَ ۝ الَّذِينَ يَظُنُّونَ أَنَّهُم مُّلَاقُو رَبِّهِمْ وَأَنَّهُمْ إِلَيْهِ رَاجِعُونَ",
+"Al-Ankabut [29]: 45":"إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ ۗ وَلَذِكْرُ اللَّهِ أَكْبَرُ",
+"Al-Baqarah [2]: 21":"يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+"Al-Baqarah [2]: 183":"يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+"Al-Qashash [28]: 77":"وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ الدُّنْيَا ۖ وَأَحْسِن كَمَا أَحْسَنَ اللَّهُ إِلَيْكَ",
+"Al-Baqarah [2]: 143":"وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ",
+"Ali Imran [3]: 110":"كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ تَأْمُرُونَ بِالْمَعْرُوفِ وَتَنْهَوْنَ عَنِ الْمُنكَرِ وَتُؤْمِنُونَ بِاللَّهِ",
+"Fussilat [41]: 33":"وَمَنْ أَحْسَنُ قَوْلًا مِّمَّن دَعَا إِلَى اللَّهِ وَعَمِلَ صَالِحًا وَقَالَ إِنَّنِي مِنَ الْمُسْلِمِينَ",
+"Al-Hajj [22]: 41":"الَّذِينَ إِن مَّكَّنَّاهُمْ فِي الْأَرْضِ أَقَامُوا الصَّلَاةَ وَآتَوُا الزَّكَاةَ وَأَمَرُوا بِالْمَعْرُوفِ وَنَهَوْا عَنِ الْمُنكَرِ",
+"As-Saff [61]: 4":"إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُم بُنيَانٌ مَّرْصُوصٌ"};
+Object.assign(AR,{
+"Al-Baqarah [2]: 165":"وَمِنَ النَّاسِ مَن يَتَّخِذُ مِن دُونِ اللَّهِ أَندَادًا يُحِبُّونَهُمْ كَحُبِّ اللَّهِ ۖ وَالَّذِينَ آمَنُوا أَشَدُّ حُبًّا لِّلَّهِ ۗ وَلَوْ يَرَى الَّذِينَ ظَلَمُوا إِذْ يَرَوْنَ الْعَذَابَ أَنَّ الْقُوَّةَ لِلَّهِ جَمِيعًا وَأَنَّ اللَّهَ شَدِيدُ الْعَذَابِ",
+"Az-Zumar [39]: 2–3":"إِنَّا أَنزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ فَاعْبُدِ اللَّهَ مُخْلِصًا لَّهُ الدِّينَ ۝ أَلَا لِلَّهِ الدِّينُ الْخَالِصُ ۚ وَالَّذِينَ اتَّخَذُوا مِن دُونِهِ أَوْلِيَاءَ مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ إِنَّ اللَّهَ يَحْكُمُ بَيْنَهُمْ فِي مَا هُمْ فِيهِ يَخْتَلِفُونَ ۗ إِنَّ اللَّهَ لَا يَهْدِي مَنْ هُوَ كَاذِبٌ كَفَّارٌ",
+"Al-Kahfi [18]: 110":"قُلْ إِنَّمَا أَنَا بَشَرٌ مِّثْلُكُمْ يُوحَىٰ إِلَيَّ أَنَّمَا إِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ ۖ فَمَن كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا",
+"Ali Imran [3]: 191":"الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَٰذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ",
+"Al-Ankabut [29]: 45":"اتْلُ مَا أُوحِيَ إِلَيْكَ مِنَ الْكِتَابِ وَأَقِمِ الصَّلَاةَ ۖ إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ ۗ وَلَذِكْرُ اللَّهِ أَكْبَرُ ۗ وَاللَّهُ يَعْلَمُ مَا تَصْنَعُونَ",
+"Al-Qashash [28]: 77":"وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ الدُّنْيَا ۖ وَأَحْسِن كَمَا أَحْسَنَ اللَّهُ إِلَيْكَ ۖ وَلَا تَبْغِ الْفَسَادَ فِي الْأَرْضِ ۖ إِنَّ اللَّهَ لَا يُحِبُّ الْمُفْسِدِينَ",
+"Al-Baqarah [2]: 143":"وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا ۗ وَمَا جَعَلْنَا الْقِبْلَةَ الَّتِي كُنتَ عَلَيْهَا إِلَّا لِنَعْلَمَ مَن يَتَّبِعُ الرَّسُولَ مِمَّن يَنقَلِبُ عَلَىٰ عَقِبَيْهِ ۚ وَإِن كَانَتْ لَكَبِيرَةً إِلَّا عَلَى الَّذِينَ هَدَى اللَّهُ ۗ وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ ۚ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَّحِيمٌ",
+"Ali Imran [3]: 110":"كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ تَأْمُرُونَ بِالْمَعْرُوفِ وَتَنْهَوْنَ عَنِ الْمُنكَرِ وَتُؤْمِنُونَ بِاللَّهِ ۗ وَلَوْ آمَنَ أَهْلُ الْكِتَابِ لَكَانَ خَيْرًا لَّهُم ۚ مِّنْهُمُ الْمُؤْمِنُونَ وَأَكْثَرُهُمُ الْفَاسِقُونَ"});
+const IK="Ibnu Katsir",KM="Kemenag RI";
+const TF={
+"Adz-Dzariyat [51]: 56":["Tujuan penciptaan makhluk adalah agar mereka menyembah Allah semata tanpa sekutu. Ibadah di sini mencakup ketaatan penuh, bukan hanya ritual.",IK],
+"Al-Baqarah [2]: 165":["‘Andad’ adalah tandingan selain Allah yang dicintai setara dengan cinta kepada-Nya. Orang beriman lebih kuat cintanya karena mengesakan Allah dan tidak membagi pengabdian.",IK],
+"An-Nisa [4]: 125":["‘Menyerahkan diri’ ditafsirkan ikhlas beramal karena Allah; ‘berbuat baik’ ditafsirkan mengikuti syariat Rasul. Ibrahim disebut teladan tauhid yang lurus.",IK+" · "+KM],
+"Al-Bayyinah [98]: 5":["‘Hunafa’ berarti condong kepada tauhid dan menjauhi syirik. Inti agama lurus: ikhlas, shalat, dan zakat.",IK+" · "+KM],
+"Al-Kahfi [18]: 110":["‘Amal saleh’ ditafsirkan sesuai syariat, dan ‘tidak menyekutukan’ berarti ikhlas karena Allah. Amal diterima bila memenuhi keduanya.",IK],
+"Az-Zumar [39]: 2–3":["Perintah memurnikan ketaatan hanya kepada Allah; agama yang bersih tidak dicampuri tujuan selain-Nya, termasuk pamer.",IK+" · "+KM],
+"Al-Baqarah [2]: 208":["‘As-silm’ ditafsirkan Islam; ‘kaffah’ berarti mengamalkan seluruh syariat semampunya, bukan sebagian saja. Menolak sebagian ajaran berarti mengikuti langkah setan.",IK],
+"Ali Imran [3]: 191":["Ulul albab berzikir dalam semua keadaan dan merenungi ciptaan Allah; hasil renungan itu adalah keyakinan bahwa penciptaan tidak sia-sia.",IK+" · "+KM],
+"Al-Mu’minun [23]: 1–2":["Khusyuk ditafsirkan hati yang tenang dan hadir serta anggota badan yang tunduk dalam shalat.",IK],
+"Al-An’am [6]: 162–163":["‘Nusuk’ ditafsirkan ibadah (juga sembelihan). Ayat ini menegaskan seluruh ibadah dan hidup-mati hanya untuk Allah.",IK+" · "+KM],
+"Al-A’la [87]: 14–15":["‘Tazakka’ ditafsirkan menyucikan diri dari syirik dan akhlak buruk; sebagian ulama menyebut pula zakat fitrah dan shalat Id.",IK],
+"Al-Baqarah [2]: 45–46":["Sabar dan shalat adalah penolong dalam urusan berat. Shalat terasa berat kecuali bagi yang khusyuk dan yakin akan bertemu Allah.",IK],
+"Al-Ankabut [29]: 45":["Shalat yang benar menumbuhkan rasa takut dan sadar kepada Allah sehingga menjauhkan dari perbuatan keji. Zikir kepada Allah lebih besar pengaruhnya.",IK],
+"Al-Baqarah [2]: 21":["Seruan umum kepada seluruh manusia untuk menyembah Tuhan yang menciptakan; takwa adalah tujuan ibadah.",IK+" · "+KM],
+"Al-Baqarah [2]: 183":["Puasa diwajibkan atas umat-umat sebelumnya juga, dengan tujuan takwa, yakni menahan diri dari yang dilarang.",IK+" · "+KM],
+"Al-Qashash [28]: 77":["Gunakan harta dan karunia untuk ketaatan demi akhirat, tanpa mengabaikan bagian dunia yang halal seperti makan, minum, pakaian, dan keluarga. Berbuat baik dan jangan merusak.",IK],
+"Al-Baqarah [2]: 143":["‘Wasath’ ditafsirkan adil dan pilihan. Umat pertengahan menjadi saksi atas manusia karena tidak berlebihan dan tidak meremehkan.",IK+" · "+KM],
+"Ali Imran [3]: 110":["Keutamaan umat ini bergantung pada amar makruf, nahi mungkar, dan iman kepada Allah.",IK],
+"Fussilat [41]: 33":["Seruan kepada Allah itu mulia bila disertai amal saleh dan jati diri sebagai muslim.",IK+" · "+KM],
+"Al-Hajj [22]: 41":["Ciri orang yang diberi kekuasaan di bumi: menegakkan shalat, zakat, dan amar makruf nahi mungkar; akhir segala urusan di tangan Allah.",IK],
+"As-Saff [61]: 4":["‘Shaffan’ adalah barisan teratur dan ‘bunyanun marshush’ bangunan yang saling merapat kokoh: pesan persatuan dan disiplin.",IK]};
+const Q=[
+{q:"Tujuan penciptaan jin dan manusia menurut QS. Adz-Dzariyat [51]: 56?",o:["Memakmurkan bumi","Beribadah kepada Allah","Mengumpulkan harta","Berkuasa"],a:1,e:"Allah menciptakan jin dan manusia agar beribadah kepada-Nya."},
+{q:"Dua syarat diterimanya amal menurut QS. Al-Kahfi [18]: 110?",o:["Ikhlas dan sesuai tuntunan","Banyak dan rutin","Cepat dan ramai","Mudah dan murah"],a:0,e:"Amal saleh (sesuai tuntunan) dan tidak syirik (ikhlas)."},
+{q:"Kata kunci tema ‘Totalitas di Semua Aspek’ (QS. Al-Baqarah [2]: 208)?",o:["Tawazun","Ihsan","Kaffah","Istiqamah"],a:2,e:"Masuk Islam secara keseluruhan (kaffah)."},
+{q:"Ciri ibadah yang ‘kena’ di hati menurut QS. Al-Ankabut [29]: 45?",o:["Terlihat banyak orang","Mencegah perbuatan keji dan mungkar","Dilakukan lama sekali","Dilakukan sendirian"],a:1,e:"Shalat yang benar mencegah keji dan mungkar."},
+{q:"Siapa yang beruntung menurut QS. Al-Mu’minun [23]: 1–2?",o:["Yang kaya","Yang berilmu","Yang berkuasa","Yang khusyuk dalam shalatnya"],a:3,e:"Orang beriman yang khusyuk dalam shalatnya."},
+{q:"Pesan keseimbangan dunia-akhirat ada pada surah?",o:["Al-Qashash [28]: 77","As-Saff [61]: 4","Al-Hajj [22]: 41","Al-Bayyinah [98]: 5"],a:0,e:"Carilah akhirat, jangan lupakan bagian dunia."},
+{q:"Makna ‘ummatan wasatha’ (QS. Al-Baqarah [2]: 143)?",o:["Umat paling banyak","Umat paling kuat","Umat pertengahan yang adil","Umat terdahulu"],a:2,e:"Wasath = pertengahan, adil, dan pilihan."},
+{q:"Syarat ‘umat terbaik’ menurut QS. Ali Imran [3]: 110?",o:["Menguasai dunia","Amar makruf, nahi mungkar, dan beriman","Jumlah terbanyak","Kaya raya"],a:1,e:"Menyuruh yang makruf, mencegah yang mungkar, beriman kepada Allah."},
+{q:"Tujuan puasa menurut QS. Al-Baqarah [2]: 183?",o:["Menurunkan berat badan","Mendapat pujian","Menghemat","Bertakwa"],a:3,e:"Agar kamu bertakwa."},
+{q:"Pesan QS. As-Saff [61]: 4 tentang barisan seperti bangunan kokoh?",o:["Kekompakan dan keteraturan","Kekuatan fisik","Kekayaan","Kecepatan"],a:0,e:"Allah mencintai perjuangan yang rapi dan bersatu."},
+{q:"Inti QS. Al-An’am [6]: 162–163?",o:["Anjuran berdagang","Pengabdian total: shalat, ibadah, hidup, mati untuk Allah","Aturan puasa","Kisah Ibrahim"],a:1,e:"Seluruh hidup dan mati dipersembahkan kepada Allah."},
+{q:"Urutan pada QS. Al-A’la [87]: 14–15?",o:["Shalat, zikir, menyucikan diri","Zikir, menyucikan diri, shalat","Menyucikan diri, menyebut nama Allah, shalat","Zakat, puasa, haji"],a:2,e:"Menyucikan diri, menyebut nama Tuhan, lalu shalat."}];
+const L=document.getElementById("list"),C=document.getElementById("chain");
+C.innerHTML=D.map((d,i)=>"<b>"+d.k.split(" ")[0]+"</b>").join("<i>→</i>");
+L.innerHTML=D.map((d,i)=>`<div class="c" data-i="${i}"><div class="h"><div class="n">${i+1}</div><div><div class="t">${d.t}</div><div class="k">Kata kunci: ${d.k}</div></div></div><div class="b"><div class="sec"><div class="row"><span class="lb">Sub tema</span><br>${d.s}</div><div class="row"><span class="lb">Tujuan</span><br>${d.g}</div><div class="row"><span class="lb">Ayat tematik</span>${d.a.map(a=>`<div class="v"><div class="r">QS. ${a[0]}</div>${AR[a[0]]?`<div class="ar">${AR[a[0]]}</div>`:""}<p>${a[1]}</p><p class="m">Makna: ${a[2]}</p>${TF[a[0]]?`<details class="tf"><summary>Tafsir</summary><p>${TF[a[0]][0]}</p><p class="src">Rujukan: ${TF[a[0]][1]}</p></details>`:""}</div>`).join("")}</div><div class="imp"><span class="lb">Implementasi</span><ul>${d.i.map(x=>"<li>"+x+"</li>").join("")}</ul></div></div><div class="hint">Ketuk kartu lagi untuk menampilkan jawaban.</div></div></div>`).join("");
+L.addEventListener("click",e=>{const c=e.target.closest(".c");if(!c)return;
+if(document.body.classList.contains("hide")&&c.classList.contains("open")&&!c.classList.contains("rev")){c.classList.add("rev");return}
+c.classList.toggle("open");c.classList.remove("rev")});
+const all=document.getElementById("all"),hf=document.getElementById("hf");
+all.onclick=()=>{const o=[...document.querySelectorAll(".c")];const open=o.every(x=>x.classList.contains("open"));o.forEach(x=>{x.classList.toggle("open",!open);x.classList.remove("rev")});all.textContent=open?"Buka semua":"Tutup semua"};
+hf.onclick=()=>{document.body.classList.toggle("hide");hf.classList.toggle("on");document.querySelectorAll(".c").forEach(x=>x.classList.remove("rev"))};
+const Qd=document.getElementById("quiz");let qi=0,sc=0,dn=false;
+function rq(){dn=false;if(qi>=Q.length){Qd.innerHTML=`<p><b>Skor: ${sc}/${Q.length}</b></p><p>${sc>=10?"Mantap, hafalanmu kuat!":"Ulangi mode hafalan di atas, lalu coba lagi."}</p><button id="rs">Ulangi kuis</button>`;Qd.querySelector("#rs").onclick=()=>{qi=0;sc=0;rq()};return}
+const q=Q[qi];Qd.innerHTML=`<div class="lb">Soal ${qi+1}/${Q.length}</div><p><b>${q.q}</b></p>`+q.o.map((o,i)=>`<button class="o" data-i="${i}">${o}</button>`).join("")+`<div id="fb"></div>`;
+Qd.querySelectorAll(".o").forEach(b=>b.onclick=()=>{if(dn)return;dn=true;const i=+b.dataset.i;if(i===q.a)sc++;
+Qd.querySelectorAll(".o").forEach((x,j)=>{if(j===q.a)x.classList.add("ok");else if(j===i)x.classList.add("no")});
+Qd.querySelector("#fb").innerHTML=`<div class="ex">${i===q.a?"Benar. ":"Kurang tepat. "}${q.e}</div><p><button id="nx">${qi+1<Q.length?"Soal berikutnya":"Lihat skor"}</button></p>`;
+Qd.querySelector("#nx").onclick=()=>{qi++;rq()}})}
+rq();
+const pg=["materi","ayat","tafsir","kuis"];
+function go(){const h=location.hash.slice(1),p=pg.includes(h)?h:"materi";pg.forEach(x=>{document.getElementById("p-"+x).hidden=x!==p});document.querySelectorAll(".nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+p))}
+addEventListener("hashchange",go);go();
+let K={};try{K=JSON.parse(localStorage.getItem("hafal")||"{}")}catch(e){}
+const sv=()=>{try{localStorage.setItem("hafal",JSON.stringify(K))}catch(e){}};
+const U=[...new Set(D.flatMap(d=>d.a.map(a=>a[0])))];
+const A=document.getElementById("ayat");
+A.innerHTML=`<div class="tb"><button id="mm">Mode hafalan</button><button id="fm">A−</button><button id="fp">A+</button><span class="pr" id="prog"></span></div><p class="sub">Ayat ditulis lengkap. Aktifkan mode hafalan untuk menyamarkan teks Arab, ketuk ayat untuk mengecek hafalanmu.</p>`+D.map((d,i)=>`<div class="th">${i+1}. ${d.t}</div>`+d.a.map(a=>`<div class="av"><div class="r">QS. ${a[0]}</div><div class="ar">${AR[a[0]]||""}</div><p class="m">${a[1]}</p><label><input type="checkbox" data-r="${a[0]}"${K[a[0]]?" checked":""}> Sudah hafal</label></div>`).join("")).join("");
+const pr=()=>{A.querySelector("#prog").textContent="Hafal: "+U.filter(r=>K[r]).length+"/"+U.length+" ayat"};pr();
+let fs=1.9;
+A.addEventListener("click",e=>{const t=e.target;if(t.id==="mm"){A.classList.toggle("mem");t.classList.toggle("on");A.querySelectorAll(".ar").forEach(x=>x.classList.remove("rv"))}else if(t.id==="fm"||t.id==="fp"){fs=Math.min(3,Math.max(1.2,fs+(t.id==="fp"?.2:-.2)));A.style.setProperty("--fs",fs+"rem")}else{const a=t.closest(".ar");if(a&&A.classList.contains("mem"))a.classList.toggle("rv")}});
+A.addEventListener("change",e=>{const r=e.target.dataset.r;if(!r)return;K[r]=e.target.checked;sv();A.querySelectorAll("input[data-r]").forEach(x=>{if(x.dataset.r===r)x.checked=K[r]});pr()});
+document.getElementById("tafsir").innerHTML=`<p class="sub">Ringkasan tafsir per ayat dengan rujukan Tafsir Ibnu Katsir dan Tafsir Kemenag RI.</p>`+D.map((d,i)=>`<div class="th">${i+1}. ${d.t}</div>`+d.a.map(a=>`<div class="av"><div class="r">QS. ${a[0]}</div><p class="m">${a[1]}</p><p>${TF[a[0]][0]}</p><p class="src">Rujukan: ${TF[a[0]][1]}</p></div>`).join("")).join("");
+</script>
+</body>
+</html>
